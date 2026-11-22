@@ -4,7 +4,7 @@
 
 **Scope:** operator-assisted, approved **SDK-02 remote Worker → Gateway → managed Kernel** integration. This is **not** self-service registration, public release certification or a production deployment claim. It does not require access to QDIP private source repositories. Your Worker transforms domain input into a `DecisionSpec`; QDIP Kernel owns optimization and the execution manifest.
 
-## 1. Prerequisites / Умови / Wymagania
+## 1. Prerequisites
 
 1. Ask the QDIP platform operator through an **existing authenticated support channel** for an approved organization/application, plugin ID, `repairs.plan` capability admission, Gateway origin, and **two separate** scoped credentials: Worker (`plugins:register`) and server-side caller (`plugins:read`, `plugins:execute`). No public key-issuance endpoint is promised.
 2. Obtain the *operator-built* `qdip-sdk02-bundle-0.1.3.zip` and `qdip-client-0.2.0.tgz` plus their SHA-256 checksums **over a trusted channel**. Verify the artifact origins and checksums before installing; hashes alone are not origin attestation. A compatible Python wheel bundle is required. These are **example pinned artifact versions**, not proof of public availability.
