@@ -25,7 +25,7 @@ Never assume `private` means safe to copy to a public Markdown page, example or 
 ## 2026-11-22 bounded read-only findings
 
 - GitHub repository metadata reports this repository as **public** and `forks_count=0` at inspection time. This does not rule out downloads, caches or external copies.
-- GitHub code search for typical token fragments, private-key banners and common credential URI patterns returned **no indexed code matches** in eight targeted queries. Code search does not inspect all binary documents or prove that historical commits are clean.
+- GitHub code search for typical token fragments, private-key banners and common credential URI patterns returned **no indexed code matches** in eight targeted queries. GitHub workflow-runs and releases list endpoints each returned **0 items** for this repository during the same review; removed historical artifacts or other external copies are not ruled out. Code search does not inspect all binary documents or prove that historical commits are clean.
 - Historical public content includes grant, IP, budget and team documents. A small set of Markdown documents was read manually; obvious literal credentials were not observed in that sample. **The entire 86-DOCX binary corpus has not been reviewed for embedded content or metadata.**
 - Collaborator listings, GitHub App grants, deploy keys, organization access and all Actions artifacts cannot be enumerated with the connected repository read API. Do not claim an access-control audit passed.
 - This policy intentionally does not disclose any internal organization/account IDs, tokens, deployment addresses or private source snippets.
