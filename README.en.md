@@ -24,6 +24,10 @@ This structure helps to:
 - control changes through ADR and change log;
 - assemble grant applications from reusable modules instead of writing from scratch.
 
+## Developer SDK onboarding
+
+[English quickstart](docs/sdk/quickstart.en.md) | [Українська](docs/sdk/quickstart.uk.md) | [Polski](docs/sdk/quickstart.pl.md). QDIP remote plugin onboarding is currently **operator-assisted**, not anonymous self-service. The guide does not require access to private QDIP source repositories. Review the [safe-publication policy](docs/security/publication-safety.md) before releasing documents or examples.
+
 ## Quick Navigation
 
 - [Grant Documentation Layer](docs/grant/README.md)
