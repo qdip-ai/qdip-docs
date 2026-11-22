@@ -4,7 +4,7 @@
 
 **Zakres:** integracja **SDK-02 remote Worker → Gateway → managed Kernel** zatwierdzona przez operatora. To **nie** jest samodzielna rejestracja publiczna, certyfikacja SDK ani potwierdzone wdrożenie produkcyjne. Dostęp do prywatnego kodu QDIP nie jest wymagany. Worker przygotowuje `DecisionSpec`; Kernel optymalizuje i tworzy manifest.
 
-## 1. Prerequisites / Умови / Wymagania
+## 1. Wymagania
 
 1. Za pośrednictwem **istniejącego uwierzytelnionego kanału pomocy** poproś operatora o zatwierdzone organization/application, plugin ID, dostęp do capability `repairs.plan`, adres Gateway i **dwa osobne** klucze: Worker (`plugins:register`) i serwerowy caller (`plugins:read`, `plugins:execute`). Nie deklarujemy publicznego automatycznego wydawania kluczy.
 2. Odbierz **zbudowane przez operatora** `qdip-sdk02-bundle-0.1.3.zip` oraz `qdip-client-0.2.0.tgz` wraz z SHA-256 **z zaufanego kanału**. Sprawdź pochodzenie i sumy kontrolne; sam hash nie dowodzi autentyczności. Wheels muszą pasować do wersji Python i OS. Są to **przykładowe wersje**, a nie gwarancja publicznej dostępności.
