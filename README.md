@@ -29,6 +29,10 @@ Research -> Requirements -> Architecture -> Implementation -> Verification -> Ev
 - збирати заявку з готових модулів, а не писати з нуля;
 - відділяти pre-registered primary evidence від exploratory результатів.
 
+## Розробникам плагінів
+
+[SDK quickstart — English](docs/sdk/quickstart.en.md) | [Українська](docs/sdk/quickstart.uk.md) | [Polski](docs/sdk/quickstart.pl.md). Підключення наразі **лише за допуском оператора**, не публічний self-service. Посібник не потребує доступу до приватного репозиторію Core. Перед публікацією файлів діють [правила безпечної публікації](docs/security/publication-safety.md).
+
 ## Швидка навігація
 
 - [Universal Runtime Grant Evidence Pack](docs/grant-evidence-pack/README.md)
