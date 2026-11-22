@@ -22,6 +22,10 @@ Never assume `private` means safe to copy to a public Markdown page, example or 
 5. Check link destinations and Markdown layout at the intended renderer. Keep code blocks fenced and avoid wide 4–5-column tables in user-facing quickstarts.
 6. Record reviewer, revision and decision in the PR. On finding exposed live credentials: stop distribution, rotate/revoke affected credentials, inspect access and incident scope; merely deleting text from the latest branch does **not** remove Git history or previous copies.
 
+## Confirmed internal-information exposure and proposed remediation
+
+The public file `docs/portfolio-dependency-roadmap.md` (snapshot 2026-10-27) contains internal security-gate status, private project roadmaps and implementation dependencies. It is not a credential leak, but it is **internal operating information** and should not be in the public documentation tree. The file was copied without content loss to private `qdip-internal-docs/governance/portfolio-dependency-roadmap-2026-10-27.md` on the remediation branch and **deleted only from the public remediation branch**. **Public `main` remains exposed until PR #25 is approved and merged.** Historical commits/copies retain earlier contents; a later deletion does not revoke external access to those historical blobs.
+
 ## 2026-11-22 bounded read-only findings
 
 - GitHub repository metadata reports this repository as **public** and `forks_count=0` at inspection time. This does not rule out downloads, caches or external copies.
